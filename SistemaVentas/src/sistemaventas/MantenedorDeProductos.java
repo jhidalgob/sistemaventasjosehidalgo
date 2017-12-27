@@ -173,7 +173,6 @@ public class MantenedorDeProductos extends javax.swing.JFrame {
 
         btneditar.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         btneditar.setText("Editar");
-        btneditar.setEnabled(false);
         btneditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btneditarActionPerformed(evt);
@@ -493,7 +492,7 @@ private void buscar(){
     private void btneditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditarActionPerformed
         Producto a= new Producto();
         
-        int pos=  buscarposicion(txtcodigo.getText());
+       
         a=buscarproducto(txtcodigo.getText());
          
         try {
